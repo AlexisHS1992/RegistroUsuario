@@ -1,6 +1,6 @@
 package com.NewExperience;
 
-import org.junit.After;
+//import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -14,7 +14,7 @@ public class PruebaTV {
 	
 	
 	
-	private WebDriver driver;
+	public WebDriver driver;
 	
 	// para habilitar el check 
 	//true = se selecciona el check
@@ -38,10 +38,10 @@ public class PruebaTV {
 	public void testNewEXperience( ) {
 		
 		driver.findElement(By.className("login")).click();
-		driver.findElement(By.id("email_create")).sendKeys("alexisherrerasalazar9293@gmail.com");
+		driver.findElement(By.id("email_create")).sendKeys("alexisherrerasalazar2@gmail.com");
 		driver.findElement(By.id("SubmitCreate")).click();
 		try {
-			Thread.sleep(5000);
+			Thread.sleep(10000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -104,11 +104,11 @@ public class PruebaTV {
 		
 
 
-	@After
-	private void tearDown() {
+	//@After
+	//public void tearDown() {
 		// TODO Auto-generated method stub
-		driver.quit();
-			}
+		//driver.quit();
+			//}
 	
 	
 	
